@@ -1,0 +1,265 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #444;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+:root {
+    --primary: #FF7B00; /* Adjusted orange for a fresher look */
+    --secondary: #FFD25B; /* Adjusted yellow for contrast */
+    --light: #F8F8F8; /* Lighter background */
+    --dark: #1A202C; /* Darker text/elements */
+}
+
+.py-5 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.btn {
+    font-weight: 600;
+    text-transform: capitalize; /* Changed to capitalize for modern look */
+    transition: all .3s ease;
+    border-radius: 8px; /* More rounded */
+    padding: 12px 28px;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark);
+    border-color: var(--dark);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+    background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+    color: #FFFFFF;
+    background-color: var(--primary);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    padding: 12px 18px;
+    font-size: 17px;
+    text-transform: capitalize; /* Capitalize for modern look */
+    color: var(--light);
+    transition: all .3s ease;
+    border-radius: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: var(--primary);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 991.98px) {
+    .navbar-dark .navbar-nav .nav-link  {
+        padding: 10px 15px;
+    }
+}
+
+.carousel-caption {
+    background: rgba(4, 15, 40, .7); /* Slightly darker overlay for better text contrast */
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h4 {
+        font-size: 18px;
+    }
+    .carousel-caption h1 {
+        font-size: 28px;
+    }
+}
+
+.page-header {
+    height: 250px; /* Slightly increased height */
+    background: linear-gradient(rgba(4, 15, 40, .7), rgba(4, 15, 40, .7)), url(../img/carousel-1.jpg) center center no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.section-title {
+    font-size: 38px;
+    margin-bottom: 25px;
+}
+
+.service-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+}
+
+.service-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    margin-top: -40px; /* Adjusted for new height */
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon i {
+    font-size: 45px;
+}
+
+.service-item:hover .service-icon i {
+    font-size: 55px;
+}
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+.portfolio-title {
+    height: 100px;
+    padding: 0 25px;
+    right: 25px;
+    left: 25px;
+    bottom: -50px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.portfolio-btn {
+    font-size: 90px;
+    margin-top: -45px;
+    margin-left: -45px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-box::before,
+.portfolio-box::after {
+    background: rgba(4, 15, 40, .6); /* Slightly darker overlay */
+    border-radius: 10px;
+}
+
+.portfolio-item:hover .portfolio-box::before {
+    width: 50%;
+}
+
+.portfolio-item:hover .portfolio-box::after {
+    width: 50%;
+}
+
+.team-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.team-item .team-text {
+    padding: 20px;
+}
+
+.team-item .team-social a {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+}
+
+.testimonial {
+    margin-left: -40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+    margin-left: -40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.footer {
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.footer-shape::before {
+    display: none; /* Removing the skewed shape */
+}
+
+.back-to-top {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 99;
+}
+
+.back-to-top:hover {
+    background: var(--dark);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.row.g-4.cards-equal-height > [class*="col-"] > .service-item,
+.row.g-4.cards-equal-height > [class*="col-"] > .portfolio-box,
+.row.g-4.cards-equal-height > [class*="col-"] > .team-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.team-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; /* Add padding for vertical spacing */
+}
+
+.team-social a {
+    margin: 0 8px; /* Slightly increase horizontal margin */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px; /* Ensure vertical centering of icon */
+    font-size: 16px;
+    color: var(--primary);
+    background: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0; /* Prevent shrinking to oval */
+    text-decoration: none; /* Ensure no underline */
+}
+
+.team-social a:hover {
+    color: var(--light);
+    background: var(--primary);
+    transform: translateY(-2px);
+}
