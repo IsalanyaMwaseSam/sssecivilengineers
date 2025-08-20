@@ -7,22 +7,22 @@ const Carousel = () => {
       <div id="header-carousel" className="carousel slide carousel-fade" data-bs-ride="carousel">
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img className="w-100" src="/img/IMG-20240623-WA0001.jpg" alt="Image" />
-            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <div className="p-3" style={{ maxWidth: '700px' }}>
-                <i className="fa fa-home fa-3x text-primary mb-3 d-none d-sm-block"></i>
-                <h1 className="display-3 text-uppercase text-white mb-md-3">Build Your Dream House With Us</h1>
-                <Link to="/get-a-quote" className="btn btn-primary py-md-2 px-md-4 mt-2">Get A Quote</Link>
+            <img className="w-100" src="/img/carousel-1.jpg" alt="Construction project panoramic view" />
+            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center rounded p-3">
+              <div className="p-3" style={{ maxWidth: '900px' }}>
+                <h4 className="text-white text-uppercase mb-2 fs-5">Trusted & Professional</h4>
+                <h1 className="display-1 text-white mb-md-4">Building Your Visions into Reality</h1>
+                <Link to="/quote" className="btn btn-primary py-2 px-4 mt-2">Get A Quote</Link>
               </div>
             </div>
           </div>
           <div className="carousel-item">
-            <img className="w-100" src="/img/IMG-20240623-WA0018.jpg" alt="Image" />
-            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-              <div className="p-3" style={{ maxWidth: '700px' }}>
-                <i className="fa fa-tools fa-3x text-primary mb-3 d-none d-sm-block"></i>
-                <h1 className="display-3 text-uppercase text-white mb-md-3">We Are Trusted For Your Project</h1>
-                <Link to="/contact" className="btn btn-primary py-md-2 px-md-4 mt-2">Contact Us</Link>
+            <img className="w-100" src="/img/carousel-2.jpg" alt="Industrial construction site" />
+            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center rounded p-3">
+              <div className="p-3" style={{ maxWidth: '900px' }}>
+                <h4 className="text-white text-uppercase mb-2 fs-5">Trusted & Professional</h4>
+                <h1 className="display-1 text-white mb-md-4">Building Modern & Trustworthy Constructions</h1>
+                <Link to="/quote" className="btn btn-primary py-2 px-4 mt-2">Get A Quote</Link>
               </div>
             </div>
           </div>

@@ -26,13 +26,13 @@ const Project = () => {
             <div className="d-inline-block bg-white text-center p-3 mb-4 rounded shadow">
               <ul className="list-inline mb-0" id="portfolio-flters">
                 <li className="btn btn-outline-primary bg-white p-2 mx-1 mb-3 rounded-pill" data-filter=".first">
-                  <img src="/img/IMG-20240623-WA0157.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" />
+                  <img src="/img/IMG-20240623-WA0157.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" alt="Construction category filter image" />
                   <div className="position-absolute top-0 start-0 end-0 bottom-0 m-1 d-flex align-items-center justify-content-center" style={{ background: 'rgba(4, 15, 40, .3)' }}>
                     <h6 className="text-white text-uppercase m-0">Construction</h6>
                   </div>
                 </li>
                 <li className="btn btn-outline-primary bg-white p-2 mx-1 mb-3 rounded-pill" data-filter=".second">
-                  <img src="/img/portfolio-3.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" />
+                  <img src="/img/portfolio-3.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" alt="Renovation category filter image" />
                   <div className="position-absolute top-0 start-0 end-0 bottom-0 m-1 d-flex align-items-center justify-content-center" style={{ background: 'rgba(4, 15, 40, .3)' }}>
                     <h6 className="text-white text-uppercase m-0">Renovation</h6>
                   </div>
@@ -44,7 +44,7 @@ const Project = () => {
         <div className="row g-4 portfolio-container cards-equal-height">
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0157.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0157.jpg" alt="Residential House project in Nakanako, Gayaza" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Residential House</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Nakanako, Gayaza</small></span>
@@ -56,7 +56,7 @@ const Project = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0001.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0001.jpg" alt="Cipla Quality Chemicals project in Luzira" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Cipla Quality Chemicals</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Luzira</small></span>
@@ -68,7 +68,7 @@ const Project = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0018.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0018.jpg" alt="Project example for construction" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -80,7 +80,7 @@ const Project = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0183.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0183.jpg" alt="Project example for renovation" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -92,7 +92,7 @@ const Project = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0081.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0081.jpg" alt="Project example for construction" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -104,7 +104,7 @@ const Project = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0070.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0070.jpg" alt="Project example for renovation" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>

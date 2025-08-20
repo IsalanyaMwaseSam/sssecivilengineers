@@ -39,7 +39,7 @@ const About = () => {
           </div>
           <div className="col-lg-5 pb-4" style={{ minHeight: '350px' }}>
             <div className="position-relative bg-light h-100 ms-4 shadow rounded">
-              <img className="position-absolute w-100 h-100 rounded" src="/img/IMG-20240623-WA0246.jpg" style={{ objectFit: 'cover' }} />
+              <img className="position-absolute w-100 h-100 rounded" src="/img/IMG-20240623-WA0246.jpg" style={{ objectFit: 'cover' }} alt="A modern building under construction, illustrating civil engineering expertise" />
             </div>
           </div>
         </div>

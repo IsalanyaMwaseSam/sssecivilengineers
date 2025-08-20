@@ -16,10 +16,10 @@ const Footer = () => {
             <p className="mb-2"><i className="fa fa-phone-alt me-2"></i>+256751299834</p>
             <p className="mb-3"><i className="fa fa-envelope me-2"></i>info@example.com</p>
             <div className="d-flex justify-content-start mt-3">
-              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://freewebsitecode.com/"><i className="fab fa-twitter"></i></a>
-              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://facebook.com/freewebsitecode/"><i className="fab fa-facebook-f"></i></a>
-              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://freewebsitecode.com/"><i className="fab fa-linkedin-in"></i></a>
-              <a className="btn btn-sm-square btn-primary rounded" href="https://wa.me/256787881296"><i className="fab fa-whatsapp"></i></a>
+              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://freewebsitecode.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
+              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://facebook.com/freewebsitecode/" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+              <a className="btn btn-sm-square btn-primary rounded me-2" href="https://freewebsitecode.com/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+              <a className="btn btn-sm-square btn-primary rounded" href="https://wa.me/256787881296" target="_blank" rel="noopener noreferrer"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>
           <div className="col-lg-6 ps-lg-4">
@@ -59,10 +59,10 @@ const Footer = () => {
       <div className="container-fluid bg-dark bg-light-radial text-white border-top border-primary px-0">
         <div className="d-flex flex-column flex-md-row justify-content-between">
           <div className="py-3 px-4 text-center text-md-start">
-            <p className="mb-0 small">&copy; <a className="text-primary" href="#">Triple S Expendable Civil Engineers Ltd</a>. All Rights Reserved.</p>
+            <p className="mb-0 small">&copy; <a className="text-primary" href="https://freewebsitecode.com" target="_blank" rel="noopener noreferrer">Triple S Expendable Civil Engineers Ltd</a>. All Rights Reserved.</p>
           </div>
           <div className="py-3 px-4 bg-primary footer-shape position-relative text-center text-md-end">
-            <p className="mb-0 small">Designed by @<a className="text-dark" href="https://stechnologies.netlify.app">SamTouch Technologies</a></p>
+            <p className="mb-0 small">Designed by @<a className="text-dark" href="https://stechnologies.netlify.app" target="_blank" rel="noopener noreferrer">SamTouch Technologies</a></p>
           </div>
         </div>
       </div>

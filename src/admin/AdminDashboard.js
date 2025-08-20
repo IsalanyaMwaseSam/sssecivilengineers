@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import GalleryManagement from './GalleryManagement';
 
 const AdminDashboard = () => {
   const navigate = useNavigate();
-  const [message, setMessage] = useState('Welcome to the Admin Dashboard!');
+  const [message] = useState('Welcome to the Admin Dashboard!');
 
   useEffect(() => {
     const token = localStorage.getItem('token');

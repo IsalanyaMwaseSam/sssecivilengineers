@@ -23,14 +23,14 @@ const Testimonial = () => {
         </div>
         <div className="row gx-0 align-items-center">
           <div className="col-xl-4 col-lg-5 d-none d-lg-block">
-            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" />
+            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" alt="Testimonial section background image" />
           </div>
           <div className="col-xl-8 col-lg-7 col-md-12">
             <div className="testimonial bg-light p-4 rounded shadow">
               <div className="owl-carousel testimonial-carousel">
                 <div className="row gx-3 align-items-center">
                   <div className="col-xl-4 col-lg-5 col-md-5">
-                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-2.jpg" alt="" />
+                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-2.jpg" alt="Waligo Betty, a happy client" />
                   </div>
                   <div className="col-xl-8 col-lg-7 col-md-7">
                     <h4 className="text-uppercase mb-0 fs-5">Waligo Betty</h4>
@@ -42,7 +42,7 @@ const Testimonial = () => {
                 </div>
                 <div className="row gx-3 align-items-center">
                   <div className="col-xl-4 col-lg-5 col-md-5">
-                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-1.jpg" alt="" />
+                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-1.jpg" alt="Mutalya Paul, a civil engineer and client" />
                   </div>
                   <div className="col-xl-8 col-lg-7 col-md-7">
                     <h4 className="text-uppercase mb-0 fs-5">Mutalya Paul</h4>

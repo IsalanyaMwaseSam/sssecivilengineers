@@ -148,7 +148,7 @@ const Service = () => {
         </div>
         <div className="row gx-0 align-items-center">
           <div className="col-xl-4 col-lg-5 d-none d-lg-block">
-            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" />
+            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" alt="Our completed project building exterior" />
           </div>
           <div className="col-xl-8 col-lg-7 col-md-12">
             <div className="testimonial bg-light p-4 rounded shadow">

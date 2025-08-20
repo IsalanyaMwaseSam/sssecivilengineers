@@ -30,7 +30,7 @@ const Home = () => {
           </div>
           <div className="col-lg-5 pb-4" style={{ minHeight: '300px' }}>
             <div className="position-relative bg-light h-100 ms-4 shadow rounded">
-              <img className="position-absolute w-100 h-100 rounded" src="/img/IMG-20240623-WA0246.jpg" style={{ objectFit: 'cover' }} />
+              <img className="position-absolute w-100 h-100 rounded" src="/img/IMG-20240623-WA0246.jpg" style={{ objectFit: 'cover' }} alt="A modern building showcasing civil engineering" />
             </div>
           </div>
         </div>
@@ -46,7 +46,7 @@ const Home = () => {
         <div className="row g-4 cards-equal-height">
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white d-flex flex-column align-items-center text-center rounded shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0006.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0006.jpg" alt="Building Construction" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-building text-primary"></i>
               </div>
@@ -60,7 +60,7 @@ const Home = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white rounded d-flex flex-column align-items-center text-center shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0056.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0056.jpg" alt="Plumbing and Electrical Works" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-home text-primary"></i>
               </div>
@@ -73,7 +73,7 @@ const Home = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white rounded d-flex flex-column align-items-center text-center shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0248.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0248.jpg" alt="Architecture Design" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-drafting-compass text-primary"></i>
               </div>
@@ -86,7 +86,7 @@ const Home = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white rounded d-flex flex-column align-items-center text-center shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0001.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0001.jpg" alt="Interior, Exterior & Compound Design" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-palette text-primary"></i>
               </div>
@@ -99,7 +99,7 @@ const Home = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white rounded d-flex flex-column align-items-center text-center shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0146.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0146.jpg" alt="Swimming Pool Construction, Stone Cladding & Roofing" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-tools text-primary"></i>
               </div>
@@ -112,7 +112,7 @@ const Home = () => {
           </div>
           <div className="col-lg-4 col-md-6">
             <div className="service-item bg-white rounded d-flex flex-column align-items-center text-center shadow">
-              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0000.jpg" alt="" />
+              <img className="img-fluid rounded-top" src="/img/IMG-20240623-WA0000.jpg" alt="Painting & Renovation" />
               <div className="service-icon bg-white rounded-circle shadow">
                 <i className="fa fa-3x fa-paint-brush text-primary"></i>
               </div>
@@ -173,13 +173,13 @@ const Home = () => {
             <div className="d-inline-block bg-white text-center p-3 mb-4 rounded shadow">
               <ul className="list-inline mb-0" id="portfolio-flters">
                 <li className="btn btn-outline-primary bg-white p-2 mx-1 mb-3 rounded-pill" data-filter=".first">
-                  <img src="/img/IMG-20240623-WA0157.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" />
+                  <img src="/img/IMG-20240623-WA0157.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" alt="Construction project" />
                   <div className="position-absolute top-0 start-0 end-0 bottom-0 m-1 d-flex align-items-center justify-content-center" style={{ background: 'rgba(4, 15, 40, .3)' }}>
                     <h6 className="text-white text-uppercase m-0">Construction</h6>
                   </div>
                 </li>
                 <li className="btn btn-outline-primary bg-white p-2 mx-1 mb-3 rounded-pill" data-filter=".second">
-                  <img src="/img/portfolio-3.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" />
+                  <img src="/img/portfolio-3.jpg" style={{ width: '100px', height: '60px' }} className="img-fluid rounded" alt="Renovation project" />
                   <div className="position-absolute top-0 start-0 end-0 bottom-0 m-1 d-flex align-items-center justify-content-center" style={{ background: 'rgba(4, 15, 40, .3)' }}>
                     <h6 className="text-white text-uppercase m-0">Renovation</h6>
                   </div>
@@ -191,7 +191,7 @@ const Home = () => {
         <div className="row g-4 portfolio-container cards-equal-height">
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0157.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0157.jpg" alt="Residential House Construction" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Residential House</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Nakanako, Gayaza</small></span>
@@ -203,7 +203,7 @@ const Home = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0001.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0001.jpg" alt="Cipla Quality Chemicals Project" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Cipla Quality Chemicals</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Luzira</small></span>
@@ -215,7 +215,7 @@ const Home = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0018.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0018.jpg" alt="Project Name Example" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -227,7 +227,7 @@ const Home = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0183.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0183.jpg" alt="Project Name Example" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -239,7 +239,7 @@ const Home = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0081.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0081.jpg" alt="Project Name Example" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -251,7 +251,7 @@ const Home = () => {
           </div>
           <div className="col-xl-4 col-lg-6 col-md-6 portfolio-item second">
             <div className="position-relative portfolio-box rounded shadow">
-              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0070.jpg" alt="" style={{ height: '200px', objectFit: 'cover' }} />
+              <img className="img-fluid w-100 rounded" src="/img/IMG-20240623-WA0070.jpg" alt="Project Name Example" style={{ height: '200px', objectFit: 'cover' }} />
               <Link className="portfolio-title shadow-sm" to="/project">
                 <p className="h5 text-uppercase mb-1">Project Name</p>
                 <span className="text-body"><small><i className="fa fa-map-marker-alt text-primary me-1"></i>Location, City, Country</small></span>
@@ -275,13 +275,13 @@ const Home = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top mb-2" src="/img/IMG-20240623-WA0016.jpg" alt="" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top mb-2" src="/img/IMG-20240623-WA0016.jpg" alt="Engineer Sowade Sharif" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a className="mx-1" href="https://wa.me/256787881296"><i className="fab fa-whatsapp"></i></a>
+                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
+                <a className="mx-1" href="https://wa.me/256787881296" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
                 <h4 className="text-uppercase fs-5 mb-1">Engineer Sowade Sharif</h4>
@@ -292,13 +292,13 @@ const Home = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-2.jpg" alt="" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-2.jpg" alt="Dylan Adams, Civil Engineer" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-instagram"></i></a>
+                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
+                <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
                 <h4 className="text-uppercase fs-5 mb-1">Dylan Adams</h4>
@@ -309,13 +309,13 @@ const Home = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-3.jpg" alt="" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-3.jpg" alt="Jhon Doe, Interior Designer" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-instagram"></i></a>
+                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
+                <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
                 <h4 className="text-uppercase fs-5 mb-1">Jhon Doe</h4>
@@ -326,13 +326,13 @@ const Home = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-4.jpg" alt="" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top mb-2" src="/img/team-4.jpg" alt="Josh Dunn, Painter" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a className="mx-1" href="#"><i className="fab fa-instagram"></i></a>
+                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
+                <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
                 <h4 className="text-uppercase fs-5 mb-1">Josh Dunn</h4>
@@ -352,14 +352,14 @@ const Home = () => {
         </div>
         <div className="row gx-0 align-items-center">
           <div className="col-xl-4 col-lg-5 d-none d-lg-block">
-            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" />
+            <img className="img-fluid w-100 h-100 rounded" src="/img/testimonial.jpg" alt="Happy client giving testimonial" />
           </div>
           <div className="col-xl-8 col-lg-7 col-md-12">
             <div className="testimonial bg-light p-4 rounded shadow">
               <div className="owl-carousel testimonial-carousel">
                 <div className="row gx-3 align-items-center">
                   <div className="col-xl-4 col-lg-5 col-md-5">
-                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-2.jpg" alt="" />
+                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-2.jpg" alt="Client Waligo Betty" />
                   </div>
                   <div className="col-xl-8 col-lg-7 col-md-7">
                     <h4 className="text-uppercase mb-0 fs-5">Waligo Betty</h4>
@@ -371,7 +371,7 @@ const Home = () => {
                 </div>
                 <div className="row gx-3 align-items-center">
                   <div className="col-xl-4 col-lg-5 col-md-5">
-                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-1.jpg" alt="" />
+                    <img className="img-fluid w-100 h-100 bg-light p-lg-2 mb-3 mb-md-0 rounded" src="/img/testimonial-1.jpg" alt="Client Mutalya Paul" />
                   </div>
                   <div className="col-xl-8 col-lg-7 col-md-7">
                     <h4 className="text-uppercase mb-0 fs-5">Mutalya Paul</h4>
