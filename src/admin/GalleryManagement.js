@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const API_BASE = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+
 const GalleryManagement = () => {
   const [galleryItems, setGalleryItems] = useState([]);
   const [title, setTitle] = useState('');
@@ -16,7 +18,7 @@ const GalleryManagement = () => {
 
   const fetchGalleryItems = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/gallery');
+      const response = await fetch(`${API_BASE}/api/gallery`);
       if (response.ok) {
         const data = await response.json();
         setGalleryItems(data);
@@ -50,11 +52,11 @@ const GalleryManagement = () => {
       formData.append('image', imageFile);
     }
 
-    let url = 'http://localhost:5000/api/gallery';
+    let url = `${API_BASE}/api/gallery`;
     let method = 'POST';
 
     if (editingItem) {
-      url = `http://localhost:5000/api/gallery/${editingItem.id}`;
+      url = `${API_BASE}/api/gallery/${editingItem.id}`;
       method = 'PUT';
     }
 
@@ -106,7 +108,7 @@ const GalleryManagement = () => {
     }
 
     try {
-      const response = await fetch(`http://localhost:5000/api/gallery/${id}`, {
+      const response = await fetch(`${API_BASE}/api/gallery/${id}`, {
         method: 'DELETE',
         headers: {
           'Authorization': `Bearer ${token}`,

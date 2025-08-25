@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
+const API_BASE = process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+
 const Gallery = () => {
   const [galleryItems, setGalleryItems] = useState([]);
   const [message, setMessage] = useState('');
@@ -18,7 +20,7 @@ const Gallery = () => {
 
   const fetchGalleryItems = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/gallery');
+      const response = await fetch(`${API_BASE}/api/gallery`);
       if (response.ok) {
         const data = await response.json();
         setGalleryItems(data);
@@ -57,12 +59,12 @@ const Gallery = () => {
             galleryItems.map((item) => (
               <div key={item.id} className="col-xl-4 col-lg-6 col-md-6 portfolio-item first">
                 <div className="position-relative portfolio-box rounded shadow">
-                  <img className="img-fluid w-100 rounded" src={`http://localhost:5000${item.imageUrl}`} alt={item.title} style={{ objectFit: 'cover', height: '250px' }} />
+                  <img className="img-fluid w-100 rounded" src={`${API_BASE}${item.imageUrl}`} alt={item.title} style={{ objectFit: 'cover', height: '250px' }} />
                   <div className="portfolio-title shadow-sm">
                     <p className="h5 text-uppercase mb-1">{item.title}</p>
                     <span className="text-body"><small><i className="fa fa-info-circle text-primary me-1"></i>{item.description}</small></span>
                   </div>
-                  <a className="portfolio-btn" href={`http://localhost:5000${item.imageUrl}`} data-lightbox="portfolio">
+                  <a className="portfolio-btn" href={`${API_BASE}${item.imageUrl}`} data-lightbox="portfolio">
                     <i className="bi bi-plus text-white"></i>
                   </a>
                 </div>
