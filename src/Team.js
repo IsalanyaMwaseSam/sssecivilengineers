@@ -42,16 +42,33 @@ const Team = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top" src="/img/team-2.jpg" alt="Dylan Adams" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top" src="/img/Eng-Mutly.jpeg" alt="Engineer Mutalya Paul" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+              <a className="mx-1" href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
                 <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
                 <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
                 <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
-                <h4 className="text-uppercase fs-5 mb-1">Dylan Adams</h4>
+                <h4 className="text-uppercase fs-5 mb-1">Engineer Mutalya Paul</h4>
+                <span className="text-muted small">Consultant Engineer</span>
+              </div>
+            </div>
+          </div>
+          <div className="col-xl-3 col-lg-4 col-md-6">
+            <div className="team-item rounded overflow-hidden bg-white shadow">
+              <div className="position-relative">
+                <img className="img-fluid w-100 rounded-top" src="/img/Eng-Fred.jpeg" alt="Engineer Fred" style={{ height: '250px', objectFit: 'cover' }} />
+              </div>
+              <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
+              <a className="mx-1" href="https://wa.me/" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
+                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
+                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
+                <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
+              </div>
+              <div className="team-text p-3 text-center flex-grow-1">
+                <h4 className="text-uppercase fs-5 mb-1">Engineer Fred</h4>
                 <span className="text-muted small">Civil Engineer</span>
               </div>
             </div>
@@ -59,34 +76,17 @@ const Team = () => {
           <div className="col-xl-3 col-lg-4 col-md-6">
             <div className="team-item rounded overflow-hidden bg-white shadow">
               <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top" src="/img/team-3.jpg" alt="Jhon Doe" style={{ height: '250px', objectFit: 'cover' }} />
+                <img className="img-fluid w-100 rounded-top" src="/img/photo.jpg" alt="Engineer Isalanya Sam Mwase" style={{ height: '250px', objectFit: 'cover' }} />
               </div>
               <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
+              <a className="mx-1" href="https://wa.me/256746022116" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i className="fab fa-whatsapp"></i></a>
                 <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
                 <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
                 <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
               </div>
               <div className="team-text p-3 text-center flex-grow-1">
-                <h4 className="text-uppercase fs-5 mb-1">Jhon Doe</h4>
-                <span className="text-muted small">Interior Designer</span>
-              </div>
-            </div>
-          </div>
-          <div className="col-xl-3 col-lg-4 col-md-6">
-            <div className="team-item rounded overflow-hidden bg-white shadow">
-              <div className="position-relative">
-                <img className="img-fluid w-100 rounded-top" src="/img/team-4.jpg" alt="Josh Dunn" style={{ height: '250px', objectFit: 'cover' }} />
-              </div>
-              <div className="team-social mt-3 mb-2 d-flex align-items-center justify-content-center">
-                <a className="mx-1" href="https://twitter.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile"><i className="fab fa-twitter"></i></a>
-                <a className="mx-1" href="https://facebook.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Facebook Profile"><i className="fab fa-facebook-f"></i></a>
-                <a className="mx-1" href="https://linkedin.com/in/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i className="fab fa-linkedin-in"></i></a>
-                <a className="mx-1" href="https://instagram.com/YourProfile" target="_blank" rel="noopener noreferrer" aria-label="Instagram Profile"><i className="fab fa-instagram"></i></a>
-              </div>
-              <div className="team-text p-3 text-center flex-grow-1">
-                <h4 className="text-uppercase fs-5 mb-1">Josh Dunn</h4>
-                <span className="text-muted small">Painter</span>
+                <h4 className="text-uppercase fs-5 mb-1">Engineer Isalanya Sam Mwase</h4>
+                <span className="text-muted small">Software Engineer</span>
               </div>
             </div>
           </div>
