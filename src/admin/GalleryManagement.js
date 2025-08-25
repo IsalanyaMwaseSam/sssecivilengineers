@@ -170,7 +170,7 @@ const GalleryManagement = () => {
             // required={!editingItem} // Image is required for new items, optional for edit
           />
           {editingItem && editingItem.imageUrl && (
-            <small className="form-text text-muted d-block mt-2">Current image: <a href={`http://localhost:5000${editingItem.imageUrl}`} target="_blank" rel="noopener noreferrer" className="text-primary">{editingItem.imageUrl}</a></small>
+            <small className="form-text text-muted d-block mt-2">Current image: <a href={`${API_BASE}${editingItem.imageUrl}`} target="_blank" rel="noopener noreferrer" className="text-primary">{editingItem.imageUrl}</a></small>
           )}
         </div>
         <button type="submit" className="btn btn-primary py-2 px-4 rounded-pill me-2 text-uppercase">{editingItem ? 'Update Item' : 'Add Item'}</button>
@@ -185,7 +185,7 @@ const GalleryManagement = () => {
           galleryItems.map((item) => (
             <div key={item.id} className="col-md-4 mb-4">
               <div className="card h-100 rounded shadow border-0">
-                <img src={`http://localhost:5000${item.imageUrl}`} className="card-img-top rounded-top" alt={item.title} style={{ height: '200px', objectFit: 'cover' }} />
+                <img src={`${API_BASE}${item.imageUrl}`} className="card-img-top rounded-top" alt={item.title} style={{ height: '200px', objectFit: 'cover' }} />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title text-uppercase mb-2">{item.title}</h5>
                   <p className="card-text small mb-3 flex-grow-1">{item.description}</p>

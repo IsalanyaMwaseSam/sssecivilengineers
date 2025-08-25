@@ -19,7 +19,32 @@ const storage = multer.diskStorage({
     cb(null, Date.now() + '-' + file.originalname);
   },
 });
-const upload = multer({ storage: storage });
+// File filter for image uploads
+const fileFilter = (req, file, cb) => {
+  // Accept only image files
+  if (file.mimetype.startsWith('image/')) {
+    cb(null, true);
+  } else {
+    cb(new Error('Only image files are allowed'), false);
+  }
+};
+
+const upload = multer({
+  storage: storage,
+  fileFilter: fileFilter,
+  limits: {
+    fileSize: 5 * 1024 * 1024, // 5MB limit
+    files: 1 // Only one file per request
+  }
+});
+
+// Ensure uploads directory exists
+const fs = require('fs');
+const uploadsDir = path.join(__dirname, '..', 'public', 'uploads');
+if (!fs.existsSync(uploadsDir)) {
+  fs.mkdirSync(uploadsDir, { recursive: true });
+  console.log('Created uploads directory:', uploadsDir);
+}
 
 // Middleware to verify JWT token
 const authenticateToken = (req, res, next) => {
@@ -80,24 +105,58 @@ let nextGalleryId = 1;
 
 // Get all gallery items
 app.get('/api/gallery', (req, res) => {
-  res.json(galleryItems);
+  try {
+    res.json(galleryItems);
+  } catch (error) {
+    console.error('Error fetching gallery items:', error);
+    res.status(500).json({ message: 'Internal server error while fetching gallery items' });
+  }
 });
 
 // Add a new gallery item (image upload)
-app.post('/api/gallery', authenticateToken, upload.single('image'), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ message: 'No image file provided' });
-  }
+app.post('/api/gallery', authenticateToken, (req, res) => {
+  // Handle multer upload with error handling
+  const uploadHandler = upload.single('image');
 
-  const { title, description } = req.body;
-  const newGalleryItem = {
-    id: nextGalleryId++,
-    title,
-    description,
-    imageUrl: `/uploads/${req.file.filename}`,
-  };
-  galleryItems.push(newGalleryItem);
-  res.status(201).json({ message: 'Image uploaded successfully', item: newGalleryItem });
+  uploadHandler(req, res, (err) => {
+    if (err) {
+      console.error('File upload error:', err);
+      if (err.code === 'LIMIT_FILE_SIZE') {
+        return res.status(400).json({ message: 'File too large. Maximum size is 5MB.' });
+      }
+      if (err.message === 'Only image files are allowed') {
+        return res.status(400).json({ message: 'Only image files are allowed' });
+      }
+      return res.status(400).json({ message: 'File upload failed', error: err.message });
+    }
+
+    if (!req.file) {
+      return res.status(400).json({ message: 'No image file provided' });
+    }
+
+    try {
+      const { title, description } = req.body;
+
+      // Validate required fields
+      if (!title || !title.trim()) {
+        return res.status(400).json({ message: 'Title is required' });
+      }
+
+      const newGalleryItem = {
+        id: nextGalleryId++,
+        title: title.trim(),
+        description: description ? description.trim() : '',
+        imageUrl: `/uploads/${req.file.filename}`,
+      };
+
+      galleryItems.push(newGalleryItem);
+      console.log('Gallery item created:', newGalleryItem);
+      res.status(201).json({ message: 'Image uploaded successfully', item: newGalleryItem });
+    } catch (error) {
+      console.error('Error creating gallery item:', error);
+      res.status(500).json({ message: 'Internal server error while creating gallery item' });
+    }
+  });
 });
 
 // Update a gallery item
