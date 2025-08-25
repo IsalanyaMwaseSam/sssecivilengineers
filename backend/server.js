@@ -30,7 +30,7 @@ const authenticateToken = (req, res, next) => {
     return res.sendStatus(401); // No token provided
   }
 
-  jwt.verify(token, process.env.JWT_SECRET || 'supersecretjwtkey', (err, user) => {
+  jwt.verify(token, process.env.JWT_SECRET || 'M5RucW0ohgOm9nIGjkEIrCSDYNlanraSzxBe2cvFImZGIZ8g8O7mChvIkfhfTWNHRPufSnPjdl9sLExhTynKtSiLYq0naZSpVRvqlJOdloVTU1GmpOwxn6ur9fxpT4EbIjf5RWd1nD6Y5NWubuTfPtuvMZ8FUSqCNVQ51lnsXGHqaZraeajVIx5ZrGksoMMAJ4cp1LPVzXSKdTNDu3DoBI321qwJE1NuQCgFvaJDvcDGbMmf8s5YbqnxnUu4yPXL', (err, user) => {
     if (err) {
       return res.sendStatus(403); // Invalid token
     }
